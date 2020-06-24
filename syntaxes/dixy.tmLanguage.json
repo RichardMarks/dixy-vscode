@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "DIXY Assembly Source",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#mnemonics"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name":"comment.line",
+          "match": ";.*$"
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name":"constant.numeric",
+          "match": "[0-9]+"
+        }
+      ]
+    },
+    "mnemonics": {
+      "patterns": [
+        {
+          "name":"keyword.operator.mnemonic",
+          "match": "\\b(IDP|IVD|OUT|MVC|MXD|CDX|CDY|AXD|SXD|CYD|CXD|XDY|MV3|INP|DVD|DDP)\\b"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.dixy"
+}

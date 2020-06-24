@@ -1,0 +1,26 @@
+{
+  "name": "dixy-vscode",
+  "displayName": "dixy-vscode",
+  "description": "Syntax highlighting for DIXY Assembly Source language",
+  "version": "0.0.1",
+  "publisher": "richardmarks-dev",
+  "engines": {
+    "vscode": "^1.46.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "dixy",
+      "aliases": ["DIXY Assembly Source", "dixy"],
+      "extensions": [".das"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "dixy",
+      "scopeName": "source.dixy",
+      "path": "./syntaxes/dixy.tmLanguage.json"
+    }]
+  }
+}
