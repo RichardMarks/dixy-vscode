@@ -4,6 +4,9 @@
   "description": "Syntax highlighting for DIXY Assembly Source language",
   "version": "0.0.1",
   "publisher": "richardmarks-dev",
+  "repository": {
+    "url": "https://github.com/RichardMarks/dixy-vscode.git"
+  },
   "engines": {
     "vscode": "^1.46.0"
   },
